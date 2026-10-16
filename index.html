@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+</head>
+<body>
+    <h1>Let's learn javascript</h1>
+    <h2>let's learn about onclick and akerts</h2>
+
+    <a href="https://www.youtube.com/" onclick="alert('Warning! You are about to leave the page!')">
+        Youtube</a>
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='I have a big brain, I am Megamind';
+    document.getElementById('secret').style.display='block'">
+        Reveal!</button>
+        <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+
+        <h2>How do I change an image in javascript?</h2>
+        <img src="images/Light on.jpg" alt="lighton" id="myimage" style="height: 200px;" width="200px">
+        <button onclick="document.getElementById('myimage').src='images/lightbulboff.jpg'">
+            Bulb off!
+        </button>
+         <button onclick="document.getElementById('myimage').src='images/lightbulbon.jpg'">Bulb on</button>
+        <h2>How do we change styles with a button?</h2>
+        <p id="alice">Hi, I am Alice</p>
+        <button onclick="document.getElementById('alice').style.color='blue'
+        document.getElementById('alice').style.fontSize='5px'">
+            Cake - Eat Me!
+        </button>
+        <button onclick="document.getElementById('alice').style.color='red'
+        document.getElementById('alice').style.fontSize='50px'">>
+            Potion - Drink Me!
+        </button>
+        <h2>Let's change the background color!</h2>
+        <button type="button" onclick="myFunction()">Change background color</button>
+
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "powderblue";
+}
+</script>
+<button type="button" onclick="myfunction()">Let's change it back</button>
+
+<script>
+function myfunction() {
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+<p id="demo">Let's move this text around</p>
+
+<button type="button" onclick="centertext()">Center text</button>
+
+<script>
+function centertext() {
+  document.getElementById("demo").style.textAlign = "center";
+}
+</script>
+
+
+<button type="button" onclick="left()">Move text back</button>
+
+<script>
+function left() {
+  document.getElementById("demo").style.textAlign = "left";
+}
+</script>
+
+</body>
+</html>
